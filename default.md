@@ -4,6 +4,15 @@ This is the default markdown page, please select what file you would like to see
 
 (NOTE: The search function only works for the file names, not their content, nor their folders)
 
+```
+IMPORTANT INFORMATION:
+The site is currently undergoing changes as some deployment bugs have been found, please read the README.md file to see the current list of bugs.
+If you find any more bugs, please create an issue on the GitHub page or report the bug to jenshobo@gmail.com.
+Know that we try our best to fix these as soon as possible, however this site is only maintained in our free time.
+
+Thank you for your patiences.
+```
+
 ## About me
 
 ```
