@@ -1,0 +1,139 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.file-system {
+    width: 300px;
+    overflow-y: auto;
+    border-right: 1px solid #444;
+    font-size: 14px;
+}
+
+.view-window {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.markdown-body {
+    color: white !important;
+}
+
+.markdown-body a {
+    color: #1e90ff;
+}
+
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.folder-content {
+    padding-left: 0; /* Ensure no padding */
+}
+
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+/* Styles for folders */
+.folder,
+.folder-toggle {
+    display: block; /* Stack vertically */
+    margin: 5px; /* Small margin for separation */
+    padding: 10px; /* Padding for button-like effect */
+    background-color: #444; /* Darker background for folders */
+    border-radius: 5px; /* Round corners */
+    color: white; /* White text for visibility */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Hover effects for folders */
+.folder:hover,
+.folder-toggle:hover {
+    background-color: #555; /* Lighter background on hover */
+}
+
+/* Active/Focus States for folders */
+.folder:active,
+.folder-toggle:active {
+    background-color: #666; /* Darker on click */
+}
+
+/* Styles for files */
+.file {
+    display: block; /* Stack vertically */
+    margin: 5px; /* Small margin for separation */
+    padding: 10px; /* Padding for button-like effect */
+    background-color: #333; /* Different background color for files */
+    border-radius: 5px; /* Round corners */
+    color: rgb(184, 184, 184); /* Slightly lighter text for files */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Pointer cursor for interactivity */
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+/* Hover effects for files */
+.file:hover {
+    background-color: #444; /* Lighter on hover */
+    color: white; /* White text on hover */
+}
+
+/* Active/Focus States for files */
+.file:active {
+    background-color: #555; /* Darker on click */
+}
+
+.folder-content {
+    padding-left: 20px; /* Indent subfolder content */
+}
+
+.header {
+    background-color: #222;
+    padding: 15px;  /* Some padding around the header */
+    text-align: left; /* Center the text */
+    position: relative;  /* Change to sticky if you want it fixed */
+    z-index: 1000; /* Make sure it shows on top of other elements */
+}
+
+.header h1 {
+    margin: 0; /* Remove default margin */
+    color: white; /* Text color for header */
+    font-size: 24px; /* Font size for better visibility */
+}
+
+.search-input {
+    width: 100%; /* Take full width */
+    padding: 10px;
+    border: none; /* No border */
+    background-color: #333; /* Same background as files */
+    color: white; /* White text */
+    font-size: 14px; /* Font size */
+    margin-bottom: 5px; /* Space below the input */
+}
+
+.search-input:focus {
+    outline: none; /* Remove default outline */
+    background-color: #444; /* Darker background on focus */
+}
+
+.highlight {
+    background-color: #555; /* Highlight background color */
+    color: white; /* Ensure text is readable */
+}

@@ -1,0 +1,74 @@
+.view-window {
+    background-color: black; /* Black background */
+    color: rgb(255, 255, 255);            /* White text color */
+    padding: 20px;          /* Some padding around the content */
+    font-family: Arial, sans-serif; /* A clean font */
+}
+
+/* Headings */
+.view-window h1 {
+    border-bottom: 3px solid white; /* Add a line under h1 */
+    padding-bottom: 10px;           /* Space between h1 and content below */
+    margin: 20px 0;                 /* Margin for h1 */
+}
+
+.view-window h2 {
+    border-bottom: 2px solid white; /* Add a line under h2 */
+    padding-bottom: 10px;           /* Space between h2 and content below */
+    margin: 15px 0;                 /* Margin for h2 */
+}
+
+.view-window h3 {
+    border-bottom: 1px solid white; /* Add a line under h3 */
+    padding-bottom: 5px;            /* Space between h3 and content below */
+    margin: 10px 0;                 /* Margin for h3 */
+}
+
+.view-window h4, .view-window h5, .view-window h6 {
+    margin: 8px 0;                  /* Margin for h4, h5, h6 */
+}
+
+/* Paragraphs */
+.view-window p {
+    margin: 0.5em 0;                /* Space between paragraphs */
+}
+
+/* Lists */
+.view-window ul,
+.view-window ol {
+    padding-left: 20px;             /* Indent lists */
+}
+
+/* Links */
+.view-window a {
+    color: #1E90FF;                 /* Color for links (change as needed) */
+    text-decoration: underline;      /* Underline the links */
+}
+
+.view-window a:hover {
+    color: #00BFFF;                 /* Change link color on hover */
+}
+
+/* Code Blocks */
+.view-window pre {
+    background-color: #333;         /* Dark background for code blocks */
+    color: #f8f8f2;                 /* Light text color for code */
+    padding: 10px;                  /* Padding in code blocks */
+    border-radius: 5px;             /* Rounded corners for aesthetics */
+}
+
+/* Inline code */
+.view-window code {
+    background-color: #444;         /* Slightly darker background for inline code */
+    color: #f8f8f2;                 /* Light text color for inline code */
+    padding: 2px 4px;               /* Padding for inline code */
+    border-radius: 3px;             /* Rounded corners for inline code */
+}
+
+/* Blockquotes */
+.view-window blockquote {
+    border-left: 4px solid #1E90FF; /* Blue left border */
+    padding: 10px 20px;             /* Padding for blockquote */
+    color: #ccc;                     /* Light grey text for quotes */
+    font-style: italic;              /* Italic style for quotes */
+}
