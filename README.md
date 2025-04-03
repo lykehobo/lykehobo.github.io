@@ -15,3 +15,4 @@ If you encounter a not yet documented bug, please report it in the issues tab or
 | Footer unclips | Scroll down further than the site was designed to go | Yes |
 | Footer overlays content | Open a large folder like ```tekeningen``` | Yes |
 | Searchbar is inactive | Try to search for an existing file | Yes |
+| Search locks folders | Search for ```frog```, remove search, try to open anything | No |
