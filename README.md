@@ -12,6 +12,6 @@ If you encounter a not yet documented bug, please report it in the issues tab or
 
 | Bug | How to reproduce | Fixed |
 | - | - | - |
-| Footer unclips | scroll down further than the site was designed to go | No |
-| Footer overlays content | Open a large folder like ```tekeningen``` | No |
-| Searchbar is inactive | Try to search for an existing file | No |
+| Footer unclips | Scroll down further than the site was designed to go | Yes |
+| Footer overlays content | Open a large folder like ```tekeningen``` | Yes |
+| Searchbar is inactive | Try to search for an existing file | Yes |
