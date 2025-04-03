@@ -15,9 +15,9 @@ Thank you for your patiences.
 
 <img src="./Images/WhatsApp Image 2025-04-02 at 12.13.08.jpeg" alt="Image Lyke" width="300"/>
 
-```
-TODO: Add an about me.
-```
+Hallo! Ik ben Lyke en ik teken graag.
+
+Als ik niet teken ben ik aan het oefenen voor het Tetris wereldkampioenschap (met natuurlijk een kat op de schoot).
 
 ## Contact
 
@@ -30,6 +30,6 @@ Ala: email, phone number, socials, etc.
 
 This website is maintained by Lyke Hobo, The website itself is owned, made and designed by [Jens Hobo](https://jenshobo.github.io/). (see footer)
 
-#### Adding content
+### Adding content
 
 Adding content has been made as easy as possible (without turning this into a massive project that would take way to long). All one would need to do is add a markdown file or image file to the folder ```Work```, and run the ```update.sh``` script, it'll update all files that need updating, after which you only have to upload them to GitHub
