@@ -2,8 +2,6 @@
 
 This is the default markdown page, please select what file you would like to see on your left. You can also use the search function if you can't find what your looking for.
 
-(NOTE: The search function only works for the file names, not their content, nor their folders)
-
 ```
 IMPORTANT INFORMATION:
 The site is currently undergoing changes as some deployment bugs have been found, please read the README.md file to see the current list of bugs.
@@ -15,13 +13,10 @@ Thank you for your patiences.
 
 ## About me
 
+<img src="./Images/WhatsApp Image 2025-04-02 at 12.13.08.jpeg" alt="Image Lyke" width="300"/>
+
 ```
 TODO: Add an about me.
-Tip, add a photo of yourself, you can do so by adding the following to this type of file:
-
-![Alt Text](./Images/MyPhoto.png)
-
-Just make sure to remove the code-block.
 ```
 
 ## Contact

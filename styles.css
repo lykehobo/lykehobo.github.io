@@ -8,6 +8,11 @@ body {
     height: 100%;
 }
 
+img {
+    height: 90%;
+    width: auto;
+}
+
 .container {
     display: flex;
     height: 100vh;
@@ -25,6 +30,9 @@ body {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
+
+    display: flex;
+    justify-content: center;
 }
 
 .markdown-body {

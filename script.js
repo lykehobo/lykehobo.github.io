@@ -22,8 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const image = document.createElement('img');
                 image.src = fileName; // Set the image source
                 image.alt = 'Image'; // Alternative text
-                image.style.maxWidth = '100%'; // Responsive image
-                image.style.height = 'auto'; // Maintain aspect ratio
 
                 viewWindow.appendChild(image); // Add image to the view window
             } else {
