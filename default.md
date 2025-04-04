@@ -1,14 +1,14 @@
 # Welcome
 
-This is the default markdown page, please select what file you would like to see on your left. You can also use the search function if you can't find what your looking for.
+Dit is de standaard markdown-pagina. Selecteer welk bestand u wilt zien aan uw linkerzijde. U kunt ook de zoekfunctie gebruiken als u niet kunt vinden wat u zoekt in de explorer.
 
 ```
-IMPORTANT INFORMATION:
-The site is currently undergoing changes as some deployment bugs have been found, please read the README.md file to see the current list of bugs.
-If you find any more bugs, please create an issue on the GitHub page or report the bug to jenshobo@gmail.com.
-Know that we try our best to fix these as soon as possible, however this site is only maintained in our free time.
+BELANGRIJKE INFORMATIE:
+De site ondergaat momenteel wijzigingen omdat er enkele implementatiebugs zijn gevonden. Lees het README.md-bestand om de huidige lijst met bugs te bekijken.
+Als u nog meer bugs vindt, maak dan een issue aan op de GitHub-pagina of meld de bug aan jenshobo@gmail.com.
+Weet dat we ons best doen om deze zo snel mogelijk op te lossen, maar deze site wordt alleen onderhouden in onze vrije tijd.
 
-Thank you for your patiences.
+Bedankt voor uw geduld.
 ```
 
 ## About me
@@ -21,15 +21,8 @@ Als ik niet teken ben ik aan het oefenen voor het Tetris wereldkampioenschap (me
 
 ## Contact
 
-```
-TODO: Add a contact page
-Ala: email, phone number, socials, etc.
-```
+E-Mail: [lykemarijkehobo@outlook.com](mailto:lykemarijkehobo@outlook.com)
 
 ## About this website
 
 This website is maintained by Lyke Hobo, The website itself is owned, made and designed by [Jens Hobo](https://jenshobo.github.io/). (see footer)
-
-### Adding content
-
-Adding content has been made as easy as possible (without turning this into a massive project that would take way to long). All one would need to do is add a markdown file or image file to the folder ```Work```, and run the ```update.sh``` script, it'll update all files that need updating, after which you only have to upload them to GitHub
