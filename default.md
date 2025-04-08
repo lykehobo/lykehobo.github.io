@@ -13,7 +13,7 @@ Bedankt voor uw geduld.
 
 ## About me
 
-<img src="./Images/WhatsApp Image 2025-04-02 at 12.13.08.jpeg" alt="Image Lyke" width="300"/>
+<img src="./Images/000030540012.jpg" alt="Image Lyke" width="300"/>
 
 Hallo! Ik ben Lyke en ik teken graag.
 
