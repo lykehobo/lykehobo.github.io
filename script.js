@@ -56,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('search');
     const folders = document.querySelectorAll('.folder');
-    const files = document.querySelectorAll('.file');
 
     // Function to filter the file system based on the search input
     function filterFileSystem() {
@@ -67,38 +66,50 @@ document.addEventListener('DOMContentLoaded', () => {
             const folderName = folder.dataset.toggle.toLowerCase();
             const folderContent = folder.nextElementSibling; // Get associated contents
             
-            // Check if the folder itself matches the search term
-            if (folderName.includes(searchTerm)) {
-                folder.style.display = 'block';
-                folderContent.style.display = 'block'; // Show the folder contents
-            } else {
-                // Hide folder content initially
-                folderContent.style.display = 'none';
-                let folderHasVisibleFiles = false;
+            // Check if any files in this folder match the search term
+            const folderFiles = folderContent.querySelectorAll('.file');
+            let folderHasVisibleFiles = false;
 
-                // Check if any files in this folder match the search term
-                const folderFiles = folderContent.querySelectorAll('.file');
-                folderFiles.forEach(file => {
-                    const fileName = file.textContent.toLowerCase();
-                    if (fileName.includes(searchTerm)) {
-                        file.style.display = 'block'; // Show matching file
-                        folderHasVisibleFiles = true; // Mark folder as having visible files
-                    } else {
-                        file.style.display = 'none'; // Hide non-matching file
-                    }
-                });
-
-                // Show folder if it contains visible files
-                if (folderHasVisibleFiles) {
-                    folder.style.display = 'block';
-                    folderContent.style.display = 'block'; // Expose the folder content
+            folderFiles.forEach(file => {
+                const fileName = file.textContent.toLowerCase();
+                if (fileName.includes(searchTerm)) {
+                    file.style.display = 'block'; // Show matching file
+                    folderHasVisibleFiles = true; // Mark folder as having visible files
                 } else {
-                    folder.style.display = 'none'; // Hide if no files or folder matches
+                    file.style.display = 'none'; // Hide non-matching file
                 }
+            });
+
+            // Show the folder if it matches the search term or has visible files
+            if (folderName.includes(searchTerm) || folderHasVisibleFiles) {
+                folder.style.display = 'block'; // Ensure the folder is visible
+                folderContent.style.display = folderHasVisibleFiles ? 'block' : 'none'; // Show or hide folder contents
+            } else {
+                folder.style.display = 'none'; // Hide folder if no matches found
             }
         });
+
+        // If the search term is empty, show all folders and hide their contents
+        if (searchTerm === '') {
+            folders.forEach(folder => {
+                folder.style.display = 'block'; // Ensure all folders are visible
+                const folderContent = folder.nextElementSibling; // Get associated contents
+                folderContent.style.display = 'none'; // Hide folder contents
+            });
+        }
     }
 
     // Event listener for the input field
     searchInput.addEventListener('input', filterFileSystem);
+
+    // Add event listeners to enable folder toggle functionality
+    folders.forEach(folder => {
+        folder.addEventListener('click', () => {
+            const folderContent = folder.nextElementSibling; // Get the associated contents
+            // Toggle visibility of folder contents only if the folder is visible
+            if (folder.style.display === 'block') {
+                folderContent.style.display = folderContent.style.display === 'block' ? 'none' : 'block'; // Toggle folder content visibility
+            }
+        });
+    });
 });
